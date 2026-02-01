@@ -67,7 +67,7 @@ export default function ScriptPracticePage() {
             </CardHeader>
             <CardContent>
               <div className="prose prose-sm max-w-none whitespace-pre-wrap leading-relaxed">
-                {scriptSegments.map(s => s.fullContent).join('\n\n---\n\n')}
+                {allSegments.map(s => s.fullContent).join('\n\n---\n\n')}
               </div>
             </CardContent>
           </Card>
@@ -78,7 +78,7 @@ export default function ScriptPracticePage() {
             </CardHeader>
             <CardContent>
               <div className="prose prose-sm max-w-none whitespace-pre-wrap leading-relaxed">
-                {scriptSegments.map(s => s.skeletonContent).join('\n\n---\n\n')}
+                {allSegments.map(s => s.skeletonContent).join('\n\n---\n\n')}
               </div>
             </CardContent>
           </Card>
